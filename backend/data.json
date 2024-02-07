@@ -1,0 +1,34 @@
+{
+  "devs": [
+    {
+      "name": "John Doe",
+      "links": {
+        "github": "https://github.com/johndoe",
+        "linkedin": "https://www.linkedin.com/in/johndoe",
+        "twitter": "https://twitter.com/johndoe"
+      },
+      "stack": ["JavaScript", "React", "Node.js", "MongoDB"],
+      "id": 1
+    },
+    {
+      "name": "Ebenezer Akhonya",
+      "links": {
+        "github": "https://github.com/itsfoss0",
+        "linkedin": "https://www.linkedin.com/in/ebenezer-akhonya",
+        "twitter": "https://twitter.com/its_foss"
+      },
+      "stack": ["Python", "Django", "Kubernetes", "AWS", "Docker"],
+      "id": 2
+    },
+    {
+      "name": "Alice Johnson",
+      "links": {
+        "github": "https://github.com/alicejohnson",
+        "linkedin": "https://www.linkedin.com/in/alicejohnson",
+        "twitter": "https://twitter.com/alicejohnson"
+      },
+      "stack": ["Java", "Spring Boot", "MySQL", "AWS"],
+      "id": 3
+    }
+  ]
+}

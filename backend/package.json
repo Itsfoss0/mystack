@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Backend for mystack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npx json-server --port 1339 data.json"
+  },
+  "keywords": [
+    "opensource",
+    "gdsc",
+    "uoe"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jsonserver": "^0.1.6"
+  }
+}
