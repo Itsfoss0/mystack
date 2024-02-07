@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+}
+
+.dev-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 22%;
+  box-sizing: content-box;
+  margin-right: 2%;
+  border: 2px solid grey;
+}
+
+.dev-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.dev-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dev-stack {
+  list-style: none;
+  padding: 0;
+}
+
+.dev-stack li {
+  margin-bottom: 5px;
+}
+
+.dev-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.dev-links li {
+  margin-bottom: 5px;
+}
+
+.dev-links li a {
+  text-decoration: none;
+  color: blue;
+}
+
+.dev-links li a:hover {
+  text-decoration: underline;
+}
