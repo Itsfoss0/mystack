@@ -7,6 +7,8 @@ const devRouter = require('./controller/devs');
 const undefinedRoute = require('./middleware/error');
 
 const app = express();
+
+app.use(express.static('dist'))
 app.use(logger('tiny'));
 app.use(cors());
 app.use('/api/v1/devs', devRouter);
