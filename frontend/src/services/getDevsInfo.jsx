@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://api-6su4.onrender.com/api/v1/devs';
+const API_URL = '/api/v1/devs';
 
 const getDevs = async () => {
   try {
