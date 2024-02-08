@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "npx json-server --port 1339 data.json"
+    "server": "node index.js"
   },
   "keywords": [
     "opensource",
@@ -15,6 +15,9 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "jsonserver": "^0.1.6"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonserver": "^0.1.6",
+    "morgan": "^1.10.0"
   }
 }
