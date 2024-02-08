@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import Dev from './components/Dev/Dev';
 import getDevs from './services/getDevsInfo';
-import './index.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import './index.css';
 
 const App = () => {
   const [devs, setDevs] = useState([]);
