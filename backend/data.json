@@ -29,6 +29,16 @@
       },
       "stack": ["Java", "Spring Boot", "MySQL", "AWS"],
       "id": 3
-    }
+    },
+    {
+      "name": "Sherlock Holmes",
+      "links": {
+        "github": "https://github.com/sholmes",
+        "linkedin": "https://www.linkedin.com/in/shlerlock",
+        "twitter": "https://twitter.com/johndoe"
+      },
+      "stack": ["JavaScript", "React", "Node.js", "MongoDB"],
+      "id": 1
+    },
   ]
 }
