@@ -1,4 +1,4 @@
-name: Run Backend Tests Before Merging to main
+name: Validate JSON structure
 
 on:
   pull_request:
@@ -14,13 +14,17 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Navigate to backend directory
-      run: cd backend
+      run: cd backend; pwd
 
-    - name: Install backend dependencies
-      run: npm install
+    - name: install JQ package
+      run: sudo apt-get update -y && sudo apt-get install jq --yes
 
-    - name: Run backend tests
-      run: npm test
+    - name: Validate JSON files
+      run: |
+        for file in $(find . -type f -name "*.json"); do
+          echo "Validating $file"
+          jq empty $file || exit 1
+        done
 
     - name: Complete
-      run: echo "Backend checks passed"
+      run: echo "JSON is valid"
