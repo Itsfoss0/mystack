@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -6,8 +7,9 @@ import './Dev.css';
 library.add(fab);
 
 const Dev = ({ dev }) => {
+  const eventRef = useRef(null);
   return (
-    <div className='wrapper'>
+    <div className='wrapper' ref={eventRef}>
       <div className='dev-card'>
         <div className='dev-name'>{dev.name}</div>
         <ul className='dev-stack'>

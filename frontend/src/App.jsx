@@ -4,6 +4,7 @@ import getDevs from './services/getDevsInfo';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import './index.css';
+import Hero from './components/Hero/Hero';
 
 const App = () => {
   const [devs, setDevs] = useState([]);
@@ -23,7 +24,8 @@ const App = () => {
 
   return (
     <>
-      <Header content='GDSC UOE' />
+      <Header />
+      <Hero />
       <div className='wrapper'>
         {devs.map((dev) => (
           <Dev key={dev.id} dev={dev} />

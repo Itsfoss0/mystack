@@ -1,5 +1,9 @@
 .wrapper {
   display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .dev-card {
@@ -11,6 +15,8 @@
   box-sizing: content-box;
   margin-right: 2%;
   border: 2px solid grey;
+  align-items: center;
+  text-align: center;
 }
 
 .dev-card:hover {

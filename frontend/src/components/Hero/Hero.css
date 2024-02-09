@@ -1,0 +1,9 @@
+/* HeroSection.css */
+
+.hero-container {
+    background-image: url('../../assets/logo.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+  }
+  
