@@ -1,0 +1,26 @@
+name: Run Backend Tests Before Merging to main
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Navigate to backend directory
+      run: cd backend
+
+    - name: Install backend dependencies
+      run: npm install
+
+    - name: Run backend tests
+      run: npm test
+
+    - name: Complete
+      run: echo "Backend checks passed"
